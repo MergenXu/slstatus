@@ -29,7 +29,7 @@
 			return NULL;
 		}
 
-		return fmt_human((rxbytes - oldrxbytes) * 1000 / interval,
+		return fmt_human_kib((rxbytes - oldrxbytes) * 1000 / interval,
 		                 1024);
 	}
 
@@ -55,7 +55,7 @@
 			return NULL;
 		}
 
-		return fmt_human((txbytes - oldtxbytes) * 1000 / interval,
+		return fmt_human_kib((txbytes - oldtxbytes) * 1000 / interval,
 		                 1024);
 	}
 #elif defined(__OpenBSD__) | defined(__FreeBSD__)

@@ -19,7 +19,7 @@
 			return NULL;
 		}
 
-		return fmt_human(free * 1024, 1024);
+		return fmt_human(free * 1000, 1024);
 	}
 
 	const char *
@@ -55,7 +55,7 @@
 			return NULL;
 		}
 
-		return fmt_human(total * 1024, 1024);
+		return fmt_human(total * 1000, 1024);
 	}
 
 	const char *
@@ -73,7 +73,7 @@
 			return NULL;
 		}
 
-		return fmt_human((total - free - buffers - cached) * 1024,
+		return fmt_human_mib((total - free - buffers - cached) * 1000,
 		                 1024);
 	}
 #elif defined(__OpenBSD__)
