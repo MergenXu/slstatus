@@ -134,7 +134,7 @@ fmt_human_kib(uintmax_t num, int base)
 	const char **prefix;
 	const char *prefix_1000[] = { "", "k", "M", "G", "T", "P", "E", "Z",
 	                              "Y" };
-	const char *prefix_1024[] = { "", "Kib"};
+	const char *prefix_1024[] = { "", "KiB/s"};
 
 	switch (base) {
 	case 1000:
@@ -167,7 +167,7 @@ fmt_human_mib(uintmax_t num, int base)
 	const char **prefix;
 	const char *prefix_1000[] = { "", "k", "M", "G", "T", "P", "E", "Z",
 	                              "Y" };
-	const char *prefix_1024[] = { "", "Kib", "Mib" };
+	const char *prefix_1024[] = { "", "Kib", "MiB" };
 
 	switch (base) {
 	case 1000:
